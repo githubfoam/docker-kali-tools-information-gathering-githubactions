@@ -1,5 +1,6 @@
 # docker-kali-tools-information-gathering-githubactions
 
+[![kali-tools-information-gathering CI workflow](https://github.com/githubfoam/docker-kali-tools-information-gathering-githubactions/actions/workflows/kali-tools-information-gathering-workflow.yml/badge.svg?branch=main)](https://github.com/githubfoam/docker-kali-tools-information-gathering-githubactions/actions/workflows/kali-tools-information-gathering-workflow.yml)  
 ~~~
 https://www.kali.org/blog/kali-linux-metapackages/
 https://www.kali.org/docs/general-use/metapackages/
