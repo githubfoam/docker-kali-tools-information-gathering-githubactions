@@ -8,7 +8,12 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get autoremove - && apt-get c
 # https://www.kali.org/docs/general-use/metapackages/
 # The most commonly used tools
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
-    apt-get install -y kali-tools-information-gathering
+    apt-get install -y kali-tools-information-gathering && \
+    echo "########################### METAPACKAGE INFO ###########################" && \
+    apt depends kali-tools-information-gathering  && \
+    apt show kali-tools-information-gathering && \
+    echo "########################### METAPACKAGE INFO ###########################"
+
 
 
 # custom packages
